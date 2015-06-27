@@ -1,0 +1,56 @@
+<html>
+<body>
+
+<h3> I does math?!</h3>
+
+<input type="text" name="firstname" id="firstinput">
+<button type="button" id="buttonplus">+</button>
+<button type="button" id="buttonminus">-</button>
+<button type="button" id="buttondivide">/</button>
+<button type="button" id="buttonmultiply">x</button>
+<input type="text" name="firstname" id="secondinput">
+=
+<span id="math"></span>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$("#buttonplus").click(function(){
+var a=document.getElementById("firstinput").value;
+a=Number(a)
+var b=document.getElementById("secondinput").value;
+b=Number(b)
+var c=a+b;
+$("#math").text(c)})
+
+
+
+$("#buttonminus").click(function(){
+var a=document.getElementById("firstinput").value;
+a=Number(a)
+var b=document.getElementById("secondinput").value;
+b=Number(b)
+var c=a-b;
+$("#math").text(c)})
+
+
+$("#buttondivide").click(function(){
+var a=document.getElementById("firstinput").value;
+a=Number(a)
+var b=document.getElementById("secondinput").value;
+b=Number(b)
+var c=a/b;
+$("#math").text(c)})
+
+
+
+$("#buttonmultiply").click(function(){
+var a=document.getElementById("firstinput").value;
+a=Number(a)
+var b=document.getElementById("secondinput").value;
+b=Number(b)
+var c=a*b;
+$("#math").text(c)})
+</script>
+
+</body>
+</html>
